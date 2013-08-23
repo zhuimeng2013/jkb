@@ -7,7 +7,8 @@
 .mod-warn-condition-message th.monitor-project{
     width: 220px;
 }
-.mod-warn-condition-message .ui-table td{
+.mod-warn-condition-message .ui-table td,
+.mod-warn-condition-manage .ui-table td{
     line-height: 24px;
 	padding:8px 0px;
 }
