@@ -1,0 +1,9 @@
+.mod-warn-set .header h5{
+    margin: 0px;
+}
+.mod-warn-message th.date{
+    width: 150px;
+}
+.mod-warn-message th.monitor-project{
+    width: 220px;
+}
