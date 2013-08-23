@@ -86,7 +86,6 @@
 }
 .mod-side-nav li a.active{
     color:#fff;
-    border-right-color: #08c;
 	background-color: #08c;
 }
 .mod-side-nav li a:link,
