@@ -1,0 +1,15 @@
+.mod-member-manage .ui-table th.account{
+
+}
+.mod-member-manage .ui-table th.name{
+    width: 140px;
+}
+.mod-member-manage .ui-table th.role{
+    width: 150px;
+}
+.mod-member-manage .ui-table th.opration{
+    width: 200px;
+}
+.mod-member-manage .btn-del{
+    margin-left: 10px;
+}
