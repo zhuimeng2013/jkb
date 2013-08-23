@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>告警</title>
+    <title>告警条件管理</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/lib/lib.css">
@@ -65,12 +65,12 @@
                               <div class="content">
                                   <ul>
                                       <li>
-                                         <a href="./warn.html" class="active">
+                                         <a href="./warn.html">
                                              告警消息
                                          </a>
                                       </li>
                                       <li>
-                                          <a href="warn-condition-manage.html">告警条件管理</a>
+                                          <a href="./warn-condition-manage.html" class="active">告警条件管理</a>
                                       </li>
                                       <li>
                                           <a href="./warn-type.html">告警方式</a>
@@ -85,7 +85,8 @@
                                     <div class="header">
                                         <form class="form-horizontal">
                                             <div class="control-group">
-                                                <label class="control-label control-label-left"><h5>所有告警消息</h5></label>
+                                                <label class="control-label control-label-left"><h5>
+                                                    所有告警条件</h5></label>
                                                 <div class="controls control-right">
                                                     <span class="help-inline">选择监控项目：</span>
                                                     <select class="select-sku" style="width:250px;">
@@ -96,7 +97,7 @@
                                                         <option>5</option>
                                                     </select>
                                                     <button type="submit" class="btn btn-primary">查找</button>
-                                                    <a class="btn btn-success" href="#">导出</a>
+                                                    <a class="btn btn-warning" href="" target="_self"><i class="icon-plus icon-white"></i>新增告警条件</a>
                                                 </div>
                                             </div>
                                         </form>
@@ -107,117 +108,144 @@
                                         <table class="ui-table">
                                             <thead>
                                                 <tr>
-                                                    <th class="date">
-                                                        检查时间
-                                                    </th>
+
                                                     <th class="monitor-project">
                                                         监控项目
                                                     </th>
+                                                    <th class="kpi">
+                                                        监控指标
+                                                    </th>
+                                                    <th class="condition">
+                                                        条件
+                                                    </th>
                                                     <th class="message">
                                                         告警消息
+                                                    </th>
+                                                    <th class="isopen">
+                                                        开启?
+                                                    </th>
+                                                    <th class="opration">
+                                                        操作
                                                     </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        2013/6/19 13:30:00
-                                                    </td>
-                                                    <td>
                                                         快活林分仓监控
                                                     </td>
                                                     <td>
-                                                        上海-盈港仓SKU（69429216000140/活性炭）库存量低于警戒线，请尽快补货！
+                                                        分仓SKU各仓库日订单量
+                                                    </td>
+                                                    <td>
+                                                        上海盈港仓连续30日＜300单
+                                                    </td>
+                                                    <td>
+                                                        分仓产品[sku-Name]，在上海盈港仓的每日订单量已经连续30日＜300单，请知晓！
+                                                    </td>
+                                                    <td>
+                                                        <label class="checkbox-open">
+                                                            <input type="checkbox"> 开启
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#">修改</a>
+                                                        <a href="#" class="btn-del">删除</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        2013/6/19 13:30:00
-                                                    </td>
-                                                    <td>
                                                         快活林分仓监控
                                                     </td>
                                                     <td>
-                                                        上海-盈港仓SKU（69429216000140/活性炭）库存量低于警戒线，请尽快补货！
+                                                        分仓SKU各仓库日订单量
+                                                    </td>
+                                                    <td>
+                                                        上海盈港仓连续30日＜300单
+                                                    </td>
+                                                    <td>
+                                                        分仓产品[sku-Name]，在上海盈港仓的每日订单量已经连续30日＜300单，请知晓！
+                                                    </td>
+                                                    <td>
+                                                        <label class="checkbox-open">
+                                                            <input type="checkbox"> 开启
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#">修改</a>
+                                                        <a href="#" class="btn-del">删除</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        2013/6/19 13:30:00
-                                                    </td>
-                                                    <td>
                                                         快活林分仓监控
                                                     </td>
                                                     <td>
-                                                        上海-盈港仓SKU（69429216000140/活性炭）库存量低于警戒线，请尽快补货！
+                                                        分仓SKU各仓库日订单量
+                                                    </td>
+                                                    <td>
+                                                        上海盈港仓连续30日＜300单
+                                                    </td>
+                                                    <td>
+                                                        分仓产品[sku-Name]，在上海盈港仓的每日订单量已经连续30日＜300单，请知晓！
+                                                    </td>
+                                                    <td>
+                                                        <label class="checkbox-open">
+                                                            <input type="checkbox" checked> 开启
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#">修改</a>
+                                                        <a href="#" class="btn-del">删除</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        2013/6/19 13:30:00
-                                                    </td>
-                                                    <td>
                                                         快活林分仓监控
                                                     </td>
                                                     <td>
-                                                        上海-盈港仓SKU（69429216000140/活性炭）库存量低于警戒线，请尽快补货！
+                                                        分仓SKU各仓库日订单量
+                                                    </td>
+                                                    <td>
+                                                        上海盈港仓连续30日＜300单
+                                                    </td>
+                                                    <td>
+                                                        分仓产品[sku-Name]，在上海盈港仓的每日订单量已经连续30日＜300单，请知晓！
+                                                    </td>
+                                                    <td>
+                                                        <label class="checkbox-open">
+                                                            <input type="checkbox"> 开启
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#">修改</a>
+                                                        <a href="#" class="btn-del">删除</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>
-                                                        2013/6/19 13:30:00
-                                                    </td>
-                                                    <td>
                                                         快活林分仓监控
                                                     </td>
                                                     <td>
-                                                        上海-盈港仓SKU（69429216000140/活性炭）库存量低于警戒线，请尽快补货！
+                                                        分仓SKU各仓库日订单量
+                                                    </td>
+                                                    <td>
+                                                        上海盈港仓连续30日＜300单
+                                                    </td>
+                                                    <td>
+                                                        分仓产品[sku-Name]，在上海盈港仓的每日订单量已经连续30日＜300单，请知晓！
+                                                    </td>
+                                                    <td>
+                                                        <label class="checkbox-open">
+                                                            <input type="checkbox"> 开启
+                                                        </label>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#">修改</a>
+                                                        <a href="#" class="btn-del">删除</a>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>
-                                                        2013/6/19 13:30:00
-                                                    </td>
-                                                    <td>
-                                                        快活林分仓监控
-                                                    </td>
-                                                    <td>
-                                                        上海-盈港仓SKU（69429216000140/活性炭）库存量低于警戒线，请尽快补货！
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        2013/6/19 13:30:00
-                                                    </td>
-                                                    <td>
-                                                        快活林分仓监控
-                                                    </td>
-                                                    <td>
-                                                        上海-盈港仓SKU（69429216000140/活性炭）库存量低于警戒线，请尽快补货！
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        2013/6/19 13:30:00
-                                                    </td>
-                                                    <td>
-                                                        快活林分仓监控
-                                                    </td>
-                                                    <td>
-                                                        上海-盈港仓SKU（69429216000140/活性炭）库存量低于警戒线，请尽快补货！
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        2013/6/19 13:30:00
-                                                    </td>
-                                                    <td>
-                                                        快活林分仓监控
-                                                    </td>
-                                                    <td>
-                                                        上海-盈港仓SKU（69429216000140/活性炭）库存量低于警戒线，请尽快补货！
-                                                    </td>
-                                                </tr>
+
                                             </tbody>
                                         </table>
                                     </div>

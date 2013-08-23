@@ -1,12 +1,61 @@
 .mod-warn-set .header h5{
     margin: 0px;
 }
-.mod-warn-message th.date{
+.mod-warn-condition-message th.date{
     width: 150px;
 }
-.mod-warn-message th.monitor-project{
+.mod-warn-condition-message th.monitor-project{
     width: 220px;
 }
-.mod-add-warn{
+.mod-warn-condition-message .ui-table td{
+    line-height: 26px;
+}
+.mod-warn-condition-message th.monitor-project{
+    width: 150px;
+}
+.mod-warn-condition-message th.kpi{
+    width: 128px;
+}
+.mod-warn-condition-message th.condition{
+    width: 140px;
+}
+.mod-warn-condition-message th.isopen{
+    width: 60px;
+}
+.mod-warn-condition-message th.opration{
+    width: 100px;
+}
+.mod-warn-condition-message .checkbox-open input{
+     margin: 0px;
+    margin-top: -2px;
+}
+.mod-warn-condition-manage  .btn-del{
+    margin-left: 4px;
+}
+.mod-warn-condition-add{
 
+}
+.mod-warn-condition-add .btn{
+    padding: 10px 40px;
+    margin-right: 20px;
+}
+.mod-warn-condition-add .form-horizontal .control-label{
+    width: 110px;
+}
+.mod-warn-condition-add .form-horizontal .controls{
+    margin-left: 130px;
+}
+.mod-warn-condition-add .help-block-set-condition{
+    padding-bottom: 6px;
+    padding-left: 12px;
+    color:#333;
+}
+.mod-warn-condition-add .ui-table-var{
+    color:#3a87ad;
+}
+.mod-warn-condition-add .input-append input{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-right: 8px;
 }
