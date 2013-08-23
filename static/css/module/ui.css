@@ -79,7 +79,7 @@
 }
 .mod-side-nav li a{
     display: block;
-    width: 148px \9;
+    width: 150px \9;
     margin: 0 0 -1px;
     padding: 10px 0px;
     border: 1px solid #e5e5e5;
@@ -87,6 +87,7 @@
 .mod-side-nav li a.active{
     color:#fff;
     border-right-color: #08c;
+	background-color: #08c;
 }
 .mod-side-nav li a:link,
 .mod-side-nav li a:visited{

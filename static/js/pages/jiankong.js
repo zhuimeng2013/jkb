@@ -1,9 +1,12 @@
 jQuery(function($){
-    $("#datepicker").datepicker({
-        altFormat: "yyyyy-mm-dd",
-        appendText:"yyyy-mm-dd",
-        dateFormat: "yy-mm-dd"
-    });
+
+    if($("#datepicker")[0]){
+		$("#datepicker").datepicker({
+			altFormat: "yyyyy-mm-dd",
+			appendText:"yyyy-mm-dd",
+			dateFormat: "yy-mm-dd"
+		});
+	}
 
     showChart();
 

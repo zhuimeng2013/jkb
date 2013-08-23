@@ -8,24 +8,25 @@
     width: 220px;
 }
 .mod-warn-condition-message .ui-table td{
-    line-height: 26px;
+    line-height: 24px;
+	padding:8px 0px;
 }
-.mod-warn-condition-message th.monitor-project{
+.mod-warn-condition-manage th.monitor-project{
     width: 150px;
 }
-.mod-warn-condition-message th.kpi{
+.mod-warn-condition-manage th.kpi{
     width: 128px;
 }
-.mod-warn-condition-message th.condition{
+.mod-warn-condition-manage th.condition{
     width: 140px;
 }
-.mod-warn-condition-message th.isopen{
+.mod-warn-condition-manage th.isopen{
     width: 60px;
 }
-.mod-warn-condition-message th.opration{
+.mod-warn-condition-manage th.opration{
     width: 100px;
 }
-.mod-warn-condition-message .checkbox-open input{
+.mod-warn-condition-manage .checkbox-open input{
      margin: 0px;
     margin-top: -2px;
 }
