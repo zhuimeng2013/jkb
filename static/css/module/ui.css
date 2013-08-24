@@ -1,3 +1,6 @@
+.hide{
+    display: none;
+}
 .ui-table-base{
     table-layout: fixed;
     width: 100%;
@@ -68,6 +71,7 @@
     box-shadow: 0 1px 4px rgba(0,0,0,.065);
     position: fixed;
     margin-left: -1px;
+    padding-top: 1px;
 }
 .mod-side-nav ul{
     margin-left: 0px;

@@ -13,3 +13,7 @@
 .mod-member-manage .btn-del{
     margin-left: 10px;
 }
+.mod-member-add .btn{
+    padding: 10px 40px;
+    margin-right: 20px;
+}

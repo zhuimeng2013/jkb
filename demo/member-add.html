@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>设置</title>
+    <title>新增会员</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/lib/lib.css">
@@ -11,7 +11,7 @@
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/header.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/footer.css">
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/module/nav.css">
-    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/set.css">
+    <link type="text/css" rel="stylesheet" media="all" href="../static/css/pages/member.css">
     <script src="../static/js/lib/lib.js"></script>
     <base target="_self"/>
 </head>
@@ -42,7 +42,7 @@
             <div class="content">
                 <ul>
                     <li class="">
-                        <a href="./gaishu.html" target="_self">概述</a>
+                        <a href="bf/gaishu-bf.html" target="_self">概述</a>
                     </li>
                     <li>
                         <a href="./jiankong-index.html" target="_self">监控项目</a>
@@ -50,9 +50,9 @@
                     <li>
                         <a href="./warn.html" target="_self">告警</a>
                     </li>
-                    <li class="">
-                        <a href="./set.html" target="_self">设置</a>
-                    </li class="active">
+                    <li class="active">
+                        <a href="./set.html" target="_self" class="">设置</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -78,33 +78,43 @@
         </div>
         <div class="grid-main">
             <div class="wrap clearfix">
-                <div class="mod-set">
+                <div class="mod-member-add">
                     <div class="header">
-                        <h2>修改密码</h2>
+                        <ul class="breadcrumb">
+                            <li><a href="./member-manage.html">会员管理</a> <span class="divider">/</span></li>
+                            <li class="active">新增会员</li>
+                        </ul>
                     </div>
                     <div class="content">
                         <form class="form-horizontal" method="post">
-                            <div class="control-group">
-                                <label class="control-label" for="oldPassowrd"><span>*</span>旧密码</label>
+                            <div class="control-group error">
+                                <label class="control-label" for="account">登录账号：</label>
                                 <div class="controls">
-                                    <input type="password" id="oldPassowrd" name="oldPassowrd" placeholder="请输入旧密码"/>
+                                    <input type="text" id="account" name="account" placeholder="请登录账号"/>
+                                    <span class="help-inline">请登录账号</span>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label" for="newPassowrd"><span>*</span>新密码</label>
+                                <label class="control-label" for="pwd">登录密码：</label>
                                 <div class="controls">
-                                    <input type="password" id="newPassowrd" name="newPassowrd" placeholder="请输入新密码"/>
+                                    <input type="password" id="pwd" name="pwd" placeholder="请登录密码"/>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label" for="newPassowrd2"><span>*</span>确认密码</label>
+                                <label class="control-label" for="role">角色：</label>
                                 <div class="controls">
-                                    <input type="password" id="newPassowrd2" name="newPassowrd2" placeholder="请输入确认密码"/>
+                                    <label class="radio inline">
+                                        <input type="radio" id="" name="role" value="option1"> 管理员
+                                    </label>
+                                    <label class="radio inline">
+                                        <input type="radio" name="role" value="option2"> 普通用户
+                                    </label>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="controls">
-                                    <button type="submit" class="btn btn-primary">修改密码</button>
+                                    <button type="submit" class="btn btn-primary">新增</button>
+                                    <button type="reset" class="btn btn-warning">取消</button>
                                 </div>
                             </div>
                         </form>
