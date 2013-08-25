@@ -88,3 +88,54 @@
 .mod-alert{
     margin-top: 10px;
 }
+.laiyuan,
+.laiyuan .sku-map{
+    width: 990px;
+    height: 700px;
+}
+.laiyuan .BMap_stdMpCtrl{
+    display: none;
+}
+.wrap-laiyuan{
+    position: relative;
+    width: 990px;
+    height: 700px;
+}
+.wrap-laiyuan .rate-show{
+    height:140px;
+    width: 100px;
+    position: absolute;
+    bottom:30px;
+    left:120px;
+    z-index: 10;
+    background-color: #eee;
+}
+.wrap-laiyuan .rate-show ul{
+    margin-left: 0px;
+}
+.wrap-laiyuan .rate-show li{
+    height: 26px;
+    list-style: none;
+    line-height: 29px;
+    position: relative;
+    padding-left: 40px;
+    color: #0e0e0e;
+    font-size: 10px;
+}
+.wrap-laiyuan .rate-show li .block{
+    width:26px;
+    height: 20px;
+    background-color: #ccc;
+    display: block;
+    position: absolute;
+    top:4px;
+    left:8px;
+}
+.wrap-laiyuan  .about-project{
+    position: absolute;
+    right:40px;
+    bottom:140px;
+    background-color: #eee;
+    padding:10px 16px 8px 16px;
+    font-size: 12px;
+}

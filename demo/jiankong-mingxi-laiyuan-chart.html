@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>监控明细-分仓SKU与未分仓SKU关联销售情况</title>
+    <title>SKU订单来源的区域分布</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <link type="text/css" rel="stylesheet" media="all" href="../static/css/lib/lib.css">
@@ -131,137 +131,31 @@
                                </form>
                            </div>
                            <div class="content">
-                               <table class="ui-table table-monitor-detail">
-                                   <thead>
-                                        <tr>
-                                            <th class="date">日期</th>
-                                            <th class="warehouse">分仓SKU订单量</th>
-                                            <th class="warehouse">未分仓SKU-69429216000140占比</th>
-                                            <th class="warehouse">未分仓SKU-69429216000140占比</th>
-                                            <th class="warehouse">未分仓SKU-69429216000140占比</th>
-                                            <th class="warehouse">未分仓SKU-69429216000140占比</th>
-                                        </tr>
-                                   </thead>
-                                   <tbody>
-                                        <tr>
-                                            <td>2013-11-11</td>
-                                            <td>2134</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2013-11-11</td>
-                                            <td>2134</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2013-11-11</td>
-                                            <td>2134</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2013-11-11</td>
-                                            <td>2134</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2013-11-11</td>
-                                            <td>2134</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2013-11-11</td>
-                                            <td>2134</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2013-11-11</td>
-                                            <td>2134</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2013-11-11</td>
-                                            <td>2134</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2013-11-11</td>
-                                            <td>2134</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2013-11-11</td>
-                                            <td>2134</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                            <td>10%</td>
-                                            <td>40%</td>
-                                        </tr>
-                                   </tbody>
-                               </table>
+                               <div class="wrap wrap-laiyuan">
+                                   <div class="laiyuan" id="laiyuan">
+                                         <div class="sku-map" id="sku-map" data-url="./map.html"></div>
+                                   </div>
+                                   <div class="rate-show">
+                                        <ul>
+                                            <li><span class="block" style="background-color:#FCFBBB;"></span>0-0.5%</li>
+                                            <li><span class="block" style="background-color:#DBEDC7 "></span>0.5%-2%</li>
+                                            <li><span class="block" style="background-color:#E7CCAF;"></span>2%-5%</li>
+                                            <li><span class="block" style="background-color:#C8C1E3;"></span>5%-8%</li>
+                                            <li><span class="block" style="background-color:#FBC5DC;"></span>8+%</li>
+                                        </ul>
+                                   </div>
+                                   <div class="about-project">
+                                       <p>时间周期：2013.03.01 - 2013.06.01</p>
+                                       <p>SKU名称：69429216000140/活性炭</p>
+                                       <p>订单总量：100,000 （单）</p>
+                                   </div>
+                               </div>
+
                            </div>
                       </div>
                   </div>
               </div>
-              <div class="layout">
-                  <div class="grid">
-                      <div class="mod-alert">
-                          <div class="content">
-                              <div class="alert alert-error">
-                                  温馨提示：此处只显示累计占比＞x%的未分仓SKU
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="layout">
-                  <div class="grid">
-                      <div class="mod-pages">
-                          <div class="content">
-                              <div class="pagination pagination-large pagination-right">
-                                  <ul>
-                                      <li class="disabled"><a href="javascrit:void(0)" target="_self">&laquo;</a></li>
-                                      <li><a href="javascrit:void(0)" target="_self">«</a></li>
-                                      <li class="active"><a href="javascrit:void(0)" target="_self">1</a></li>
-                                      <li><a href="#">1</a></li>
-                                      <li><a href="#">2</a></li>
-                                      <li><a href="#">3</a></li>
-                                      <li><a href="#">4</a></li>
-                                      <li><a href="#">5</a></li>
-                                      <li><a href="#">»</a></li>
-                                      <li class="disabled"><a href="javascrit:void(0)" target="_self">»</a></li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+
 
 
           </div>
@@ -280,6 +174,8 @@
      </div>
 
      <script src="../static/plugins/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
-    <script src="../static/js/pages/jiankong.js"></script>
+     <script type="text/javascript" src="http://api.map.baidu.com/api?key=46ce9d0614bf7aefe0ba562f8cf87194&v=1.1&services=true"></script>
+     <script src="../static/js/pages/jiankong.js"></script>
+
 </body>
 </html>
