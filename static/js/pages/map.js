@@ -25,14 +25,14 @@ jQuery(function($){
                     var ply = new BMap.Polygon(rs.boundaries[i], {strokeWeight: 1, strokeOpacity:0.5,fillColor:color,strokeColor: "#000000"});
                     map.addOverlay(ply);
 
-                    //¿ªÊ¼ÓÃ"mouseover","mouseout"·¢ÏÖ,Êó±êÒÆ¶¯¹ý¿ì,»á¶à¸öÊ¡·ÝÒ²¸ßÁÁÁË.ËùÒÔ¸Ä³É clickÁË
+                    //ï¿½ï¿½Ê¼ï¿½ï¿½"mouseover","mouseout"ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Ê¡ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½Ô¸Ä³ï¿½ clickï¿½ï¿½
                     ply.addEventListener("click", function (e) {
 						return;
                         var latlng = e.point;
                         var info = new BMap.InfoWindow(name + " " + latlng.lat + "," + latlng.lng, {width:220});
                         map.openInfoWindow(info, latlng);
 
-                        //¸ßÁÁÉÁË¸ÏÔÊ¾Êó±êµã»÷µÄÊ¡
+                        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¡
                         delay = 0;
                         for (flashTimes = 0; flashTimes < 3; flashTimes++) {
                             delay += 200;

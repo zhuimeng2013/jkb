@@ -1,5 +1,5 @@
 .layout-banner{
-    background: transparent url(https://i.alipayobjects.com/e/201307/giwCOMS9f_src.jpg) no-repeat center 0px;
+    background: transparent url(../../img/pages/login.jpg) no-repeat center 0px;
 }
 
 .mod-login{
@@ -60,5 +60,15 @@
 }
 .mod-about-jkb dd.item h2{
     font-size: 16px;
-    color:#ccc;
+    color:#666;
+    padding-left: 44px;
+}
+.mod-about-jkb dd.item h2.data{
+    background: transparent url("../../img/pages/data.jpg") no-repeat 0px 0px
+}
+.mod-about-jkb dd.item h2.monitor{
+    background: transparent url("../../img/pages/monitor.jpg") no-repeat 0px 0px;
+}
+.mod-about-jkb dd.item h2.service{
+    background: transparent url("../../img/pages/service.jpg") no-repeat 0px 0px;
 }

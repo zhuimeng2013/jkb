@@ -14,6 +14,11 @@
 .mod-toolbar{
     height: 26px;
     line-height:26px;
+    font-size: 12px;
+}
+.mod-toolbar .user-name{
+    color:#ff7300;
+    padding-right: 6px;
 }
 .mod-toolbar p{
     float: right;

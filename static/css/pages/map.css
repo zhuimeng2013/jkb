@@ -15,10 +15,11 @@ body{
 	height:140px;
 	width: 100px;
 	position: absolute;
-	bottom:30px;
-	left:120px;
+	bottom:40px;
+	left:150px;
 	z-index: 10;
 	background-color: #eee;
+    border-radius: 4px;
 }
 .doc .rate-show ul{
 	margin-left: 0px;
@@ -48,6 +49,7 @@ body{
 	background-color: #eee;
 	padding:10px 16px 8px 16px;
 	font-size: 12px;
+    border-radius: 4px;
 }
 
 #map_container{

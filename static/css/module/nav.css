@@ -18,6 +18,9 @@
 .mod-nav li a:link,
 .mod-nav li a:visited{
     color:#08c;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .mod-nav li.active{
     background-color: #08c;
