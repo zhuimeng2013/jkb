@@ -53,3 +53,7 @@ body{
 #map_container{
 	width:990px;height:700px;
 }
+.anchorBL,
+.BMap_cpyCtrl{
+	display:none;
+}
