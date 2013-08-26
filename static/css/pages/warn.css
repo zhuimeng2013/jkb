@@ -42,7 +42,7 @@
     margin-right: 20px;
 }
 .mod-warn-condition-add .form-horizontal .control-label{
-    width: 110px;
+    width: 114px;
 }
 .mod-warn-condition-add .form-horizontal .controls{
     margin-left: 130px;
@@ -60,4 +60,12 @@
     -moz-border-radius: 4px;
     border-radius: 4px;
     margin-right: 8px;
+}
+
+.mod-no-result .no-result{
+    height: 40px;
+    line-height: 40px;
+    padding-top: 40px;
+    background: transparent url(../../img/pages/icon-no-result.png) no-repeat 140px 42px;
+    padding-left: 180px;
 }

@@ -44,11 +44,10 @@
                                             <fieldset>
                                                 <legend>用户登录</legend>
                                                 <div class="ui-form-content">
-
-                                                    <label>用户名：</label>
-                                                    <input type="text" placeholder="请输入用户名" name="loginId" id="loginId">
-                                                    <span class="label label-important hide" id="label-login-id">请输入用户名。</span>
-                                                    <label>密码：</label>
+                                                    <span class="label label-important label-error" id="label-error-box"><i class=" icon-remove icon-white"></i><span class="info">请输入用户名</span></span>
+                                                    <label for="userName">用户名：</label>
+                                                    <input type="text" placeholder="请输入用户名" name="userName" id="userName">
+                                                    <label for="pwd">密码：</label>
                                                     <input type="password" placeholder="请输入密码" name="password" id="pwd">
                                                     <span class="label label-important hide" id="label-pwd">请输入密码。</span>
                                                     <label class="checkbox">

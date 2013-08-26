@@ -37,6 +37,9 @@
     line-height: 15px;
     padding: 4px 8px;
 }
+.mod-login .login-box form .label-error{
+     width: 200px;
+}
 .mod-about-jkb{
 
 }
