@@ -61,11 +61,9 @@ jQuery(function($){
         $.ajax({
             url:$('#map_container').data('url'),
             type:'GET',
-			success:function(){
-				
-			}
+            dataType:"json"
         }).done(function(res){
-				res = jQuery.parseJSON(res);
+				//res = jQuery.parseJSON(res);
 				if(res&&res.success){
 					getBoundaryDigui(res.data);
 					map.clearOverlays();

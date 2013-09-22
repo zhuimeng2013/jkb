@@ -89,7 +89,7 @@ webSvr.on("error", function(error) {
 //开始侦听8124端口 
 webSvr.listen(8080,function(){
 //向控制台输出服务启动的信息 
-    console.log('[WebSvr][Start] running at http://127.0.0.1/');
+    console.log('[WebSvr][Start] running at http://127.0.0.1:8080/');
 //结束服务启动计时器并输出 
     console.timeEnd('[WebSvr][Start]');
 }); 
