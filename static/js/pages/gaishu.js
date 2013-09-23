@@ -6,11 +6,11 @@ jQuery(function($){
         $.ajax({
             url:$('#chart').data('url'),
             type:'GET',
+            dataType:'json',
             success:function(){
 
             }
         }).done(function(res){
-            var res = jQuery.parseJSON(res);
             if(res&&res.success){
                 showCharts(res);
             }
