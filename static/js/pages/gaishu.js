@@ -19,6 +19,12 @@ jQuery(function($){
 
         function showCharts(data){
             $('#chart').highcharts({
+                exporting:{
+                    enabled:false
+                },
+                credits: {
+                    enabled: false
+                },
                 chart: {
                     type: data.type
                 },
