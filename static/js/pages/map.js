@@ -25,17 +25,15 @@ jQuery(function($){
                     var ply = new BMap.Polygon(rs.boundaries[i], {strokeWeight: 1, strokeOpacity:0.5,fillColor:color,strokeColor: "#000000"});
                     map.addOverlay(ply);
 
-                    //��ʼ��"mouseover","mouseout"����,����ƶ����,����ʡ��Ҳ������.���Ըĳ� click��
                     ply.addEventListener("click", function (e) {
 						return;
                         var latlng = e.point;
                         var info = new BMap.InfoWindow(name + " " + latlng.lat + "," + latlng.lng, {width:220});
                         map.openInfoWindow(info, latlng);
 
-                        //������˸��ʾ�������ʡ
                         delay = 0;
                         for (flashTimes = 0; flashTimes < 3; flashTimes++) {
-                            delay += 200;
+                            delay += 100;
                             setTimeout(function () {
                                 ply.setFillColor("#FFFF00");
                             }, delay);
