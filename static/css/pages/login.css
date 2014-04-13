@@ -1,4 +1,7 @@
 .layout-banner{
+   background: #f4f4f4 url(../../img/pages/bg.jpg) repeat-x 0px 0px;
+}
+.layout-banner .grid{
     background: transparent url(../../img/pages/login.jpg) no-repeat center 0px;
 }
 
@@ -25,6 +28,8 @@
 }
 .mod-login .login-box form legend{
     color:#fff;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 .ui-form-content{
     padding-left: 4px;
@@ -36,6 +41,11 @@
 .mod-login .login-box form .label{
     line-height: 15px;
     padding: 4px 8px;
+    font-size: 12px;
+}
+.mod-login .login-box form input,
+.mod-login .login-box form label{
+    font-size: 12px;
 }
 .mod-login .login-box form .label-error{
      width: 200px;
